@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Game Development Hub">
+    <meta name="keywords" content="github,unity,game development,dev">
+    <meta name="author" content="BSD">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="http://cdn.onlinewebfonts.com/svg/img_544939.png">
+    <link rel="stylesheet" href="./css/bsd.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bsd.js"></script>
+    <title>
+        Seneca Dev Hub
+    </title>
+</head>
+
+<body>
+    <style>
+        img[src*="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"] {
+            display: none;
+        }
+    </style>
+    <!-- menu bar -->
+    <header id="select-menu">
+        <div id="logo-container">
+            <a href="#featured-display">
+                <span>&lt;/&gt;<span id="mobile-logo"> Seneca Dev Hub</span></span>
+            </a>
+        </div>
+        <div id="menu-container">
+            <a href="#featured-display">
+                <div id="option1" class="option">
+                    <span>Home</span>
+                </div>
+            </a>
+            <a href="#games-display">
+                <div id="option2" class="option">
+                    <span>Featured</span>
+                </div>
+            </a>
+            <a href="#info-display">
+                <div id="option3" class="option">
+                    <span>Info</span>
+                </div>
+            </a>
+            <a href="#select-menu">
+                <div id="option4" class="option">
+                    <span>Sign Up ►</span>
+                </div>
+            </a>
+        </div>
+    </header>
+
+
+    <!-- error message div -->
+    <div id="error">
+        <div id="error-message">
+            <h1>This feature is currently unavailable.</h1>
+        </div>
+        <div id="error-image">
+            <img src="./img/whiteX.png" width="30" height="30" />
+        </div>
+    </div>
+
+    <!-- main feature -->
+    <div id="featured-display">
+        <div id="feature-container">
+            <span id="feature-title">Seneca Dev Hub</span><br>
+            <span id="feature-desc"><a id="gamedev" href="#unity">Game Dev.</a> &ensp; <a id="collabs" href="#github">Collabs.</a>
+                &ensp; <a id="supports" href="#developer">Support.</a></span><br>
+            <a href="#featured-display"><button>Join Now</button></a>
+        </div>
+    </div>
+
+    <!-- games feature -->
+    <div id="games-display">
+        <div id="game-cover">
+            <div class="flat">
+                <h1>Check out our games.</h1>
+            </div>
+        </div>
+        <a href="https://rainbow6.ubisoft.com/siege/en-ca/home/index.aspx">
+            <div id="game1" class="game">
+                <div class="flat">
+                    <h1>Game 1</h1>
+                    <h2>Game one description.</h2>
+                </div>
+            </div>
+        </a>
+        <a href="https://streetfighter.com/">
+            <div id="game2" class="game">
+                <div class="flat">
+                    <h1>Game 2</h1>
+                    <h2>Game two description.</h2>
+                </div>
+            </div>
+        </a>
+        <a href="https://play.na.leagueoflegends.com/en_US">
+            <div id="game3" class="game">
+                <div class="flat">
+                    <h1>Game 3</h1>
+                    <h2>Game three description.</h2>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.ea.com/games/need-for-speed">
+            <div id="game4" class="game">
+                <div class="flat">
+                    <h1>Game 4</h1>
+                    <h2>Game four description.</h2>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <!-- information -->
+    <div id="info-display">
+        <div id="unity" class="info">
+            <div id="unity-logo" class="logo-image">
+                <img src="./img/unityLogo.png" width="200" height="200">
+            </div>
+            <div id="unity-desc" class="info-desc">
+                <h1>Unity</h1>
+                <span>Powerful, easy-to-learn game engine.</span><br>
+                <a href="https://unity3d.com/"><button>Get Unity</button></a>
+            </div>
+        </div>
+        <div id="github" class="info">
+            <div id="github-logo" class="logo-image">
+                <img src="./img/githubLogo.png" width="200" height="200">
+            </div>
+            <div id="github-desc" class="info-desc">
+                <h1>Github</h1>
+                <span>Share code and collaborate on projects.</span><br>
+                <a href="https://github.com/"><button>Sign Up For Github</button></a>
+            </div>
+        </div>
+        <div id="developer" class="info">
+            <div id="dev-logo" class="logo-image">
+                <img src="./img/devLogo.png" width="200" height="200">
+            </div>
+            <div id="dev-desc" class="info-desc">
+                <h1>Developer Support</h1>
+                <span>Team up with other devs, look up tutorials.</span><br>
+                <a href="#dev-desc"><button>Request Support</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer links-->
+    <footer id="more-links">
+        <div id="links">
+            <ul>
+                <li>Seneca BSD</li>
+                <li>Projects</li>
+                <li>Support</li>
+                <li>More Info</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <div id="social">
+            <ul>
+                <li><a href="https://www.facebook.com/"><img src="./img/facebookIcon.png" width="50" height="50"></a></li>
+                <li><a href="https://twitter.com/"><img src="./img/twitterIcon.png" width="50" height="50"></a></li>
+                <li><a href="https://www.instagram.com/?hl=en"><img src="./img/instagramIcon.png" width="50" height="50"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

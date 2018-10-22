@@ -1,0 +1,800 @@
+/* big noodle titling font */
+
+/* regular */
+
+@font-face {
+    font-family: 'bnt';
+    src: url("../fonts/big_noodle_titling.ttf");
+}
+
+/* italic */
+
+@font-face {
+    font-family: 'bnti';
+    src: url("../fonts/big_noodle_titling_oblique.ttf");
+}
+
+/* main page body ----------------------------------- */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+}
+
+/* global links */
+
+a {
+    text-decoration: none;
+}
+
+/* global flatten */
+
+.flat {
+    transform: skewY(-1deg);
+}
+
+/* menu bar ----------------------------------------- */
+
+/* containing div */
+
+#select-menu {
+    margin: 0;
+    padding: 0;
+    z-index: 3;
+    position: fixed;
+    overflow: hidden;
+    min-height: 50px;
+    width: 100%;
+    background: #ffffff;
+}
+
+/* options container */
+
+#select-menu #menu-container {
+    float: right;
+}
+
+/* select options */
+
+#select-menu #menu-container .option {
+    margin: 0;
+    padding: 15px 50px 15px 50px;
+    display: inline-block;
+}
+
+#select-menu #menu-container .option:hover {
+    background: #b80000;
+    transition: 0.25s;
+}
+
+#select-menu #menu-container .option:hover span {
+    color: #ffffff;
+    transition: 0.25s;
+}
+
+#select-menu #menu-container .option span {
+    font-family: bnti;
+    font-size: 30px;
+    color: #000000;
+}
+
+/* person character */
+
+#select-menu #menu-container .option #person {
+    font-family: bnti;
+    font-size: 25px;
+    color: #000000;
+}
+
+/* logo container */
+
+#select-menu #logo-container {
+    margin: 0;
+    padding: 2px 0 0 30px;
+    float: left;
+}
+
+/* logo */
+
+#select-menu #logo-container span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 55px;
+    color: #000000;
+}
+
+#select-menu #logo-container span:hover {
+    color: #b80000;
+    transition: 0.15s;
+}
+
+/* logo mobile text */
+
+#select-menu #logo-container span #mobile-logo {
+    display: none;
+}
+
+/* error message display ----------------------------------- */
+
+/* container */
+#error {
+    margin: 55px 0 0 0;
+    padding: 0;
+    z-index: 2;
+    position: fixed;
+    overflow: hidden;
+    min-height: 20px;
+    width: 100%;
+    background: #ff0000;
+    display: none;
+}
+
+/* message */
+#error #error-message{
+    margin: 10px 0 0 50px;
+    padding: 0;
+    float: left;
+    font-family: bnti;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+/* image */
+#error #error-image {
+    margin: 30px 70px 0 0;
+    padding: 0;
+    float: right;
+    cursor: pointer;
+}
+
+/* featured display ----------------------------------- */
+
+/* feature div */
+
+#featured-display {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    min-height: 550px;
+    width: 100%;
+    text-align: center;
+    background: url("../img/feature_div.png") no-repeat;
+    background-size: cover;
+    background-position: 40% 0%;
+}
+
+/* feature container */
+
+#featured-display #feature-container {
+    margin: 140px 0 0 0;
+    padding: 0;
+}
+
+/* feature text and button */
+
+#featured-display #feature-container #feature-title {
+    margin: 0;
+    padding: 0;
+    font-family: bnti;
+    font-size: 120px;
+    color: #000000;
+    animation: featureAnim 2s infinite;
+}
+
+@keyframes featureAnim {
+    0% {
+        color: #000000;
+    }
+    25% {
+        color: #b80000;
+    }
+    50% {
+        color: #000000;
+    }
+    75% {
+        color: #b80000;
+    }
+    100% {
+        color: #000000;
+    }
+}
+
+#featured-display #feature-container #feature-desc a {
+    margin: 0;
+    padding: 0;
+    font-family: bnti;
+    font-size: 40px;
+    font-weight: normal;
+    color: #000000;
+}
+
+#featured-display #feature-container #feature-desc a:hover {
+    color: #b80000;
+}
+
+#featured-display #feature-container button {
+    margin: 40px 0 0 0;
+    padding: 0;
+    cursor: pointer;
+    font-family: bnt;
+    color: #ffffff;
+    font-size: 35px;
+    padding: 15px 20px 15px 20px;
+    border: none;
+    background: #b80000;
+}
+
+#featured-display #feature-container button:hover {
+    background: #ff0000;
+}
+
+/* games display ----------------------------------- */
+
+/* games container */
+
+#games-display {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    min-height: 500px;
+    width: 100%;
+    text-align: center;
+    background: #ff0000;
+    transform: skewY(1deg);
+}
+
+/* games cover */
+
+#games-display #game-cover {
+    position: absolute;
+    z-index: 2;
+    min-height: 500px;
+    width: 100%;
+    height: 100%;
+    background: url("../img/game_div.png") no-repeat;
+    background-size: cover;
+}
+
+#games-display:hover #game-cover {
+    z-index: -1;
+    display: none;
+}
+
+#games-display #game-cover h1 {
+    margin: 160px 0 0 0;
+    padding: 0;
+    font-family: bnt;
+    font-size: 150px;
+    text-shadow: 1px 1px #000000;
+    color: #ffffff;
+}
+
+/* games 1 */
+
+#games-display #game1 {
+    float: left;
+    min-height: 250px;
+    width: 50%;
+    text-align: center;
+    background: url("../img/r6s.jpg");
+    background-size: cover;
+}
+
+#games-display #game1:hover h1 {
+    opacity: 1.0;
+    transition: 0.25s;
+}
+
+#games-display #game1:hover h2 {
+    opacity: 1.0;
+    transition: 0.25s;
+}
+
+#games-display #game1 h1 {
+    margin: 50px 0 0 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90px;
+    text-shadow: 3px 3px #000000;
+    color: #ffffff;
+    opacity: 0.0;
+}
+
+#games-display #game1 h2 {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-shadow: 3px 3px #000000;
+    color: #ffffff;
+    opacity: 0.0;
+}
+
+/* games 2 */
+
+#games-display #game2 {
+    float: right;
+    min-height: 250px;
+    width: 50%;
+    text-align: center;
+    background: url("../img/sfv.jpg");
+    background-size: cover;
+}
+
+#games-display #game2:hover h1 {
+    opacity: 1.0;
+    transition: 0.25s;
+}
+
+#games-display #game2:hover h2 {
+    opacity: 1.0;
+    transition: 0.25s;
+}
+
+#games-display #game2 h1 {
+    margin: 50px 0 0 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90px;
+    text-shadow: 3px 3px #000000;
+    color: #ffffff;
+    opacity: 0.0;
+}
+
+#games-display #game2 h2 {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-shadow: 3px 3px #000000;
+    color: #ffffff;
+    opacity: 0.0;
+}
+
+/* games 3 */
+
+#games-display #game3 {
+    float: left;
+    min-height: 250px;
+    width: 50%;
+    text-align: center;
+    background: url("../img/lol.jpg");
+    background-size: cover;
+    background-position: 0% 70%;
+}
+
+#games-display #game3:hover h1 {
+    opacity: 1.0;
+    transition: 0.25s;
+}
+
+#games-display #game3:hover h2 {
+    opacity: 1.0;
+    transition: 0.25s;
+}
+
+#games-display #game3 h1 {
+    margin: 50px 0 0 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90px;
+    text-shadow: 3px 3px #000000;
+    color: #ffffff;
+    opacity: 0.0;
+}
+
+#games-display #game3 h2 {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-shadow: 3px 3px #000000;
+    color: #ffffff;
+    opacity: 0.0;
+}
+
+/* games 4 */
+
+#games-display #game4 {
+    float: right;
+    z-index: 1;
+    min-height: 250px;
+    width: 50%;
+    text-align: center;
+    background: #00ff37;
+    background: url("../img/nfs.jpg");
+    background-size: cover;
+    background-position: 0% 70%;
+}
+
+#games-display #game4:hover h1 {
+    opacity: 1.0;
+    transition: 0.25s;
+}
+
+#games-display #game4:hover h2 {
+    opacity: 1.0;
+    transition: 0.25s;
+}
+
+#games-display #game4 h1 {
+    margin: 50px 0 0 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90px;
+    text-shadow: 3px 3px #000000;
+    color: #ffffff;
+    opacity: 0.0;
+}
+
+#games-display #game4 h2 {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-shadow: 3px 3px #000000;
+    color: #ffffff;
+    opacity: 0.0;
+}
+
+/* info display ----------------------------------- */
+
+/* main container */
+
+#info-display {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    min-height: 900px;
+    width: 100%;
+    text-align: center;
+}
+
+/* info containers */
+
+#info-display .info {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    min-height: 300px;
+    width: 100%;
+    text-align: center;
+}
+
+/* sections */
+
+/* unity */
+
+#info-display #unity-logo {
+    margin: 0;
+    padding: 50px 0 0 100px;
+    float: left;
+    text-align: center;
+}
+
+#info-display #unity-desc {
+    margin: 0;
+    padding: 60px 100px 0 0;
+    float: right;
+    text-align: center;
+}
+
+#info-display #unity-desc h1 {
+    margin: 0;
+    padding: 0;
+    font-family: bnt;
+    font-size: 60px;
+    color: #000000;
+}
+
+#info-display #unity-desc span {
+    margin: 0;
+    padding: 0;
+    font-family: bnti;
+    font-size: 50px;
+    color: #000000;
+}
+
+#info-display #unity-desc a button {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    font-family: bnt;
+    color: #ffffff;
+    font-size: 25px;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    background: #b80000;
+}
+
+#info-display #unity-desc a button:hover {
+    background: #ff0000;
+}
+
+/* github */
+
+#info-display #github-logo {
+    margin: 0;
+    padding: 40px 100px 0 0;
+    float: right;
+    text-align: center;
+}
+
+#info-display #github-desc {
+    margin: 0;
+    padding: 50px 0 0 100px;
+    float: left;
+    text-align: center;
+}
+
+#info-display #github-desc h1 {
+    margin: 0;
+    padding: 0;
+    font-family: bnt;
+    font-size: 60px;
+    color: #000000;
+}
+
+#info-display #github-desc span {
+    margin: 0;
+    padding: 0;
+    font-family: bnti;
+    font-size: 50px;
+    color: #000000;
+}
+
+#info-display #github-desc a button {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    font-family: bnt;
+    color: #ffffff;
+    font-size: 25px;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    background: #b80000;
+}
+
+#info-display #github-desc a button:hover {
+    background: #ff0000;
+}
+
+/* developer */
+
+#info-display #dev-logo {
+    margin: 0;
+    padding: 50px 0 0 100px;
+    float: left;
+    text-align: center;
+}
+
+#info-display #dev-desc {
+    margin: 0;
+    padding: 60px 100px 0 0;
+    float: right;
+    text-align: center;
+}
+
+#info-display #dev-desc h1 {
+    margin: 0;
+    padding: 0;
+    font-family: bnt;
+    font-size: 60px;
+    color: #000000;
+}
+
+#info-display #dev-desc span {
+    margin: 0;
+    padding: 0;
+    font-family: bnti;
+    font-size: 50px;
+    color: #000000;
+}
+
+#info-display #dev-desc a button {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    font-family: bnt;
+    color: #ffffff;
+    font-size: 25px;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    background: #b80000;
+}
+
+#info-display #dev-desc a button:hover {
+    background: #ff0000;
+}
+
+/* footer links ----------------------------------- */
+
+/* container */
+
+#more-links {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    min-height: 300px;
+    width: 100%;
+    text-align: center;
+    background: #e4e4e4;
+}
+
+/* custom links */
+
+#more-links #links {
+    margin: 0;
+    padding: 0;
+    float: left;
+    text-align: left;
+    width: 50%;
+    min-height: 300px;
+}
+
+#more-links #links ul {
+    list-style: none;
+    margin: 40px 0 0 200px;
+    padding: 0;
+    cursor: pointer;
+    font-family: bnt;
+    font-size: 20px;
+    color: #808080;
+}
+
+#more-links #links ul li {
+    margin: 0;
+    padding: 20px 0 0 0;
+}
+
+#more-links #links ul li:hover {
+    filter: brightness(10%);
+}
+
+/*  */
+
+#more-links #social {
+    float: right;
+    width: 50%;
+    min-height: 300px;
+}
+
+#more-links #social ul {
+    list-style: none;
+    margin: 120px 200px 0 0;
+    padding: 0;
+}
+
+#more-links #social ul li {
+    display: inline;
+    margin: 0;
+    padding: 0 0 0 20px;
+}
+
+#more-links #social ul li:hover {
+    filter: brightness(10%);
+}
+
+/* MEDIA QUERIES ----------------------------------- */
+
+@media only screen and (max-width: 1000px) {
+    #select-menu #menu-container {
+        display: none;
+    }
+    #select-menu #logo-container {
+        margin: 0;
+        padding: 0;
+        float: none;
+        text-align: center;
+    }
+    #select-menu #logo-container span {
+        font-size: 30px;
+    }
+    #select-menu #logo-container span #mobile-logo {
+        display: inline;
+        font-family: bnti;
+        font-size: 25px;
+        color: #000000;
+    }
+    #select-menu #logo-container span:hover #mobile-logo {
+        color: #b80000;
+        transition: 0.25s;
+    }
+    #featured-display {
+        background-position: 20% 0%;
+        background-size: cover;
+    }
+    #featured-display #feature-container {
+        margin: 150px 0 0 0;
+        padding: 0;
+    }
+    #featured-display #feature-container #feature-title {
+        font-size: 60px;
+    }
+    #featured-display #feature-container #feature-desc a {
+        font-size: 30px;
+    }
+    #featured-display #feature-container button {
+        margin: 20px 0 0 0;
+        padding: 0;
+        font-family: bnt;
+        color: #ffffff;
+        font-size: 20px;
+        padding: 10px 15px 10px 15px;
+        border: none;
+        background: #b80000;
+    }
+    #games-display #game-cover {
+        display: none;
+    }
+    #games-display #game1, #games-display #game2, #games-display #game3, #games-display #game4 {
+        float: none;
+        width: 100%;
+        background-size: cover;
+        background-position: 0% 0%;
+    }
+    #games-display #game1 h1, #games-display #game2 h1, #games-display #game3 h1, #games-display #game4 h1 {
+        margin: 0;
+        padding: 40px 0 0 0;
+        font-size: 60px;
+    }
+    #info-display #unity-logo, #info-display #github-logo, #info-display #dev-logo {
+        margin: 0;
+        padding: 0;
+        display: none;
+        float: none;
+    }
+    #info-display #unity-desc, #info-display #github-desc, #info-display #dev-desc {
+        margin: 20px 0 0 0;
+        padding: 0;
+        float: none;
+    }
+    #info-display #unity-desc h1, #info-display #github-desc h1, #info-display #dev-desc h1 {
+        font-size: 40px;
+    }
+    #info-display #unity-desc span, #info-display #github-desc span, #info-display #dev-desc span {
+        font-size: 30px;
+    }
+    #more-links #links {
+        display: none;
+    }
+    #more-links #social {
+        margin: 0;
+        padding: 0;
+        float: none;
+        width: 100%;
+    }
+    #more-links #social ul {
+        margin: 100px 0 0 0;
+        padding: 0;
+    }
+    #more-links #social ul li {
+        margin: 0;
+        padding: 20px;
+    }
+    #error {
+        margin: 45px 0 0 0;
+        padding: 0;
+    }
+    #error #error-message{
+        margin: 0;
+        padding: 0;
+        float: none;
+        font-family: bnti;
+        font-size: 10px;
+        color: #ffffff;
+        text-align: center;
+    }
+    #error #error-image {
+        margin: 0;
+        padding: 0;
+        float: none;
+        cursor: pointer;
+        text-align: center;
+    }
+    #error #error-image img {
+        width: 20px;
+        height: 20px;
+    }
+}
